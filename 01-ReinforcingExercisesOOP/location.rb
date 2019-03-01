@@ -35,15 +35,24 @@ class Trip
   def start_trip
 
     puts "Began trip"
-    destinations.each_with_index do |destination, index|
-      next_location = destinations[ index + 1]
 
-      next unless next_location
-      puts "Travelled from #{destination.name} to #{next_location.name}"
+    # destinations.each_with_index do |destination, index|
+    #   next_location = destinations[ index + 1]
+    #
+    #   next unless next_location #=> continue ONLYIF true
+    #   puts "Travelled from #{destination.name} to #{next_location.name}"
+    #
+    # end
 
-    end
+    destinations.each_cons(2) { |cities|
+
+      puts "Travelled from \"#{cities[0].name}\" to \"#{cities[1].name}\""
+
+    }
 
     puts "Ended trip"
+
+    "end"
 
   end
 
