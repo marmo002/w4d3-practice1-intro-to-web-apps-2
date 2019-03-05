@@ -2,12 +2,12 @@ require './contact'
 require 'sinatra'
 
 get '/' do
-  erb :index
+  redirect to '/contacts'
 end
 
 get '/contacts' do
 
-  @contact = Contact.all
+  @contacts = Contact.all
 
   erb :contact
 end
