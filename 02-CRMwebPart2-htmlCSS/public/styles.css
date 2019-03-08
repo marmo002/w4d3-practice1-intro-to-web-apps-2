@@ -60,6 +60,24 @@ header nav li a
   font-weight: bold;
 }
 
+.contacts-list li
+{
+  /* border:solid 1px blue; */
+  padding: 20px;
+  margin-bottom: 15px;
+  background-color: #0EE1D0;
+  font-family: "Arial Black";
+  /* font-size: 1.5rem; */
+}
+
+.contacts-list a
+{
+  font-size: 16px;
+  font-family: "Arial";
+}
+
+
+
 footer
 {
   text-align: center;
