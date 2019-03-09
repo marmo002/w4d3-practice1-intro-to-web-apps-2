@@ -76,6 +76,22 @@ header nav li a
   font-family: "Arial";
 }
 
+/* SHOW CONTACT PAGE */
+.contact-box * {
+  margin-bottom: 10px;
+}
+
+.contact-box {
+  padding: 15px;
+  border: solid 1px #0EE1D0;
+  background-color: #0EE1D0;
+  border-radius: 5px;
+}
+
+.contact-box h1 {
+  font-family: "Arial Black";
+}
+
 
 
 footer

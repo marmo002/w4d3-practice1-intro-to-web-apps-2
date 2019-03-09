@@ -16,6 +16,14 @@ class Contact < ActiveRecord::Base
     "#{first_name} #{last_name}"
   end
 
+  def notes?
+    if note.split.count < 1
+      "no notes"
+    else
+      note
+    end
+  end
+
 end
 
 Contact.auto_upgrade!
