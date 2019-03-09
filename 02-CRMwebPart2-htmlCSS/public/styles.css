@@ -45,6 +45,7 @@ header nav li a
   margin: 15px auto;
   font-family: "Arial";
   font-size: 20px;
+  min-height: 500px;
 }
 
 #wrapper h2
